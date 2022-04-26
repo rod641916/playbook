@@ -7,9 +7,12 @@
     "start": "node index.js",
     "test": "node ./node_modules/jest/bin/jest.js"
   },
+  
+  
   "author": "rodrigo",
   "license": "ISC",
   "dependencies": {
     "jest": "^28.0.0"
   }
+  
 }
