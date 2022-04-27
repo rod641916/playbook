@@ -29,6 +29,10 @@ class Users {
     set setBio(newBio){
         this.bio=newBio
     }
+
+    get getList(){
+        this.Users()
+    }
 } 
 
 module.exports = Users
