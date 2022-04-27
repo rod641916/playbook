@@ -10,6 +10,15 @@ class UserService{
        return Object.values(user)//devuelve un array con los valores correspondientes 
                                  // las propiedades enumerables de un objeto.
     }
+
+    static updateUserUsername(user, username){
+        user.setUsername=username
+    }
+
+    static getAllUsernames(users){
+        const usersUsersNames=users.map(user=> user.username)
+        return usersUsersNames
+    }
 }
 
 module.exports=UserService
