@@ -7,7 +7,7 @@ class UserView {
             console.log("Payload es nulo")
             return {error:"Error: Payload no existe"}
         }else if (typeof payload.username==='string' && typeof payload.name==='string' && typeof payload.id==='number'){
-            return UserServices.create(payload.username,payload.name,payload.id)
+            return UserServices.create(payload.username,payload.name,payload.id) //type devuelve una cadena que indica el tipo del operando sin evaluarlo.
         }else{
             return {error: "Se necesitan ingresar valores validos"}
         }
